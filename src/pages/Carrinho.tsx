@@ -1,8 +1,8 @@
 function Carrinho() {
   return (
-    <div>
+    <main>
       <h2 data-testid="shopping-cart-empty-message">Seu carrinho está vazio</h2>
-    </div>
+    </main>
   );
 }
 

@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import Categores from '../components/Categores';
 
 function Home() {
   const navigate = useNavigate();
@@ -6,7 +7,7 @@ function Home() {
     navigate('/cart');
   };
   return (
-    <div>
+    <main>
 
       <input type="text" id="home" />
       <button
@@ -21,7 +22,10 @@ function Home() {
         Digite algum termo de pesquisa ou escolha uma
         categoria.
       </h2>
-    </div>
+      <aside>
+        <Categores />
+      </aside>
+    </main>
   );
 }
 
